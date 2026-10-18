@@ -151,7 +151,8 @@ figure figcaption b{font-weight:600}
 .letter{margin-top:110px;border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);padding:40px 0 44px}
 .letter h2{grid-column:1/8;font-family:var(--display);font-weight:400;font-size:clamp(40px, 5.2vw, 80px);line-height:.92;letter-spacing:-.02em}
 .letter p{grid-column:8/11;align-self:end;font-size:18px}
-.letter .go{grid-column:11/13;align-self:end;text-align:right}
+.letter .go{grid-column:11/13;align-self:end;display:flex;flex-direction:column;align-items:flex-end;gap:10px}
+.letter .go a{width:max-content}
 
 /* footer */
 footer{margin-top:44px;padding-bottom:44px}
@@ -280,6 +281,7 @@ footer .copy{grid-column:12/13;text-align:right}
   .about .bio,.about .bio2{margin-top:24px}
   .letter{margin-top:72px}
   .letter p,.letter .go{margin-top:18px;text-align:left}
+  .letter .go{align-items:flex-start}
   .article .aside{margin-top:30px}
   .article .aside .dek{position:static;font-size:28px}
   .prose{margin-top:26px;font-size:19px;line-height:1.6}
